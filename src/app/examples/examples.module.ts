@@ -11,6 +11,7 @@ import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ExamplesComponent } from './examples.component';
 import { RefregerationComponent } from './refregeration/refregeration.component';
+import { CoolingComponent } from './cooling/cooling.component';
 
 @NgModule({
     imports: [
@@ -28,7 +29,8 @@ import { RefregerationComponent } from './refregeration/refregeration.component'
         LoginComponent,
         ExamplesComponent,
         ProfileComponent,
-        RefregerationComponent
+        RefregerationComponent,
+        CoolingComponent
     ]
 })
 export class ExamplesModule { }
