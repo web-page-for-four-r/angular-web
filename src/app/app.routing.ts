@@ -10,16 +10,18 @@ import { ProfileComponent } from './examples/profile/profile.component';
 import { NucleoiconsComponent } from './components/nucleoicons/nucleoicons.component';
 import { RefregerationComponent } from './examples/refregeration/refregeration.component';
 import { CoolingComponent } from './examples/cooling/cooling.component';
+import { HomeComponent } from './examples/home/home.component';
 
 const routes: Routes =[
-    { path: '', redirectTo: 'index', pathMatch: 'full' },
+    { path: '', redirectTo: 'examples/home', pathMatch: 'full' },
     { path: 'index',                component: ComponentsComponent },
     { path: 'nucleoicons',          component: NucleoiconsComponent },
     { path: 'examples/landing',     component: LandingComponent },
     { path: 'examples/refer',     component:  RefregerationComponent},
     { path: 'examples/cooling',     component:  CoolingComponent},
     { path: 'examples/login',       component: LoginComponent },
-    { path: 'examples/profile',     component: ProfileComponent }
+    { path: 'examples/profile',     component: ProfileComponent },
+    { path: 'examples/home',     component: HomeComponent }
 ];
 
 @NgModule({

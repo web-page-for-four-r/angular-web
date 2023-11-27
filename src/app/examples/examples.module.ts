@@ -12,6 +12,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { ExamplesComponent } from './examples.component';
 import { RefregerationComponent } from './refregeration/refregeration.component';
 import { CoolingComponent } from './cooling/cooling.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
     imports: [
@@ -21,8 +22,8 @@ import { CoolingComponent } from './cooling/cooling.component';
         NouisliderModule,
         JwBootstrapSwitchNg2Module,
         AgmCoreModule.forRoot({
-            apiKey: 'YOUR_KEY_HERE'
-        })
+            apiKey: ' '
+        }),
     ],
     declarations: [
         LandingComponent,
@@ -30,7 +31,9 @@ import { CoolingComponent } from './cooling/cooling.component';
         ExamplesComponent,
         ProfileComponent,
         RefregerationComponent,
-        CoolingComponent
+        CoolingComponent,
+        HomeComponent,
+        
     ]
 })
 export class ExamplesModule { }

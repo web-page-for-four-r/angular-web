@@ -20,9 +20,8 @@
       </div>
     </div>
     <div class="navbar-translate">
-      <a class="navbar-brand"  placement="bottom"
-        >
-        
+      <a class="navbar-brand" placement="bottom">
+
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
         aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation"
@@ -34,43 +33,43 @@
     </div>
     <div class="collapse navbar-collapse" data-nav-image="assets/img/blurred-image-1.jpg" data-color="orange">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a class="nav-link" href="https://www.creative-tim.com/product/now-ui-kit-angular" target="_blank">
             <i class="now-ui-icons arrows-1_cloud-download-93"></i>
             <p>Home</p>
           </a>
-        </li>
+        </li> -->
         <li class="nav-item">
-          <a class="nav-link" routerLink ="/examples/landing">
+          <a class="nav-link" routerLink="/examples/landing">
             <i class="bi bi-fan"></i>
             <p>Air conditioning</p>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink ="/examples/refer">
+          <a class="nav-link" routerLink="/examples/refer">
             <i class="now-ui-icons arrows-1_cloud-download-93"></i>
             <p>Refrigeration</p>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink ="/examples/cooling">
+          <a class="nav-link" routerLink="/examples/cooling">
             <i class="now-ui-icons arrows-1_cloud-download-93"></i>
             <p>Cooling</p>
           </a>
         </li>
         <li class="nav-item">
           <div ngbDropdown class="dropdown">
-              <a class="nav-link dropdown-toggle" ngbDropdownToggle>
-                <i class="bi bi-file-earmark-person-fill"></i>
-                <p>
-                    About Us
-                </p>
-              </a>
-              <div ngbDropdownMenu class="dropdown-menu">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
+            <a class="nav-link dropdown-toggle" ngbDropdownToggle>
+              <i class="bi bi-file-earmark-person-fill"></i>
+              <p>
+                About Us
+              </p>
+            </a>
+            <div ngbDropdownMenu class="dropdown-menu">
+              <a class="dropdown-item" routerLink="/examples/profile">Contact Me</a>
+              <!-- <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a> -->
+            </div>
           </div>
         </li>
         <li class="nav-item">
@@ -81,8 +80,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" rel="tooltip" title="Follow us on Instagram" data-placement="bottom"
-            >
+          <a class="nav-link" rel="tooltip" title="Follow us on Instagram" data-placement="bottom">
             <i class="fab fa-instagram"></i>
             <p class="d-lg-none d-xl-none">Instagram</p>
           </a>
