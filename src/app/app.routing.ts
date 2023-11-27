@@ -1,27 +1,22 @@
 import { NgModule } from '@angular/core';
 import { CommonModule, } from '@angular/common';
-import { BrowserModule  } from '@angular/platform-browser';
+import { BrowserModule } from '@angular/platform-browser';
 import { Routes, RouterModule } from '@angular/router';
 
-import { ComponentsComponent } from './components/components.component';
-import { LandingComponent } from './examples/landing/landing.component';
-import { LoginComponent } from './examples/login/login.component';
-import { ProfileComponent } from './examples/profile/profile.component';
-import { NucleoiconsComponent } from './components/nucleoicons/nucleoicons.component';
-import { RefregerationComponent } from './examples/refregeration/refregeration.component';
-import { CoolingComponent } from './examples/cooling/cooling.component';
-import { HomeComponent } from './examples/home/home.component';
+import { LandingComponent } from './core/components/landing/landing.component';
+import { RefregerationComponent } from './core/components/refregeration/refregeration.component';
+import { CoolingComponent } from './core/components/cooling/cooling.component';
+import { AirConditioningComponent } from './core/components/air-conditioning/air-conditioning.component';
+import { ProfileComponent } from './core/components/profile/profile.component';
 
-const routes: Routes =[
-    { path: '', redirectTo: 'examples/home', pathMatch: 'full' },
-    { path: 'index',                component: ComponentsComponent },
-    { path: 'nucleoicons',          component: NucleoiconsComponent },
-    { path: 'examples/landing',     component: LandingComponent },
-    { path: 'examples/refer',     component:  RefregerationComponent},
-    { path: 'examples/cooling',     component:  CoolingComponent},
-    { path: 'examples/login',       component: LoginComponent },
-    { path: 'examples/profile',     component: ProfileComponent },
-    { path: 'examples/home',     component: HomeComponent }
+const routes: Routes = [
+    { path: '', redirectTo: 'home', pathMatch: 'full' },
+    { path: 'air-conditioning', component: LandingComponent },
+    { path: 'refrigeration', component: RefregerationComponent },
+    { path: 'cooling', component: CoolingComponent },
+    { path: 'contactus', component: ProfileComponent },
+    { path: 'home', component: AirConditioningComponent },
+    { path: '*', redirectTo: 'home' }
 ];
 
 @NgModule({
