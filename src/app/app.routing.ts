@@ -8,6 +8,7 @@ import { RefregerationComponent } from './core/components/refregeration/refreger
 import { CoolingComponent } from './core/components/cooling/cooling.component';
 import { AirConditioningComponent } from './core/components/air-conditioning/air-conditioning.component';
 import { ProfileComponent } from './core/components/profile/profile.component';
+import { GalleryComponent } from './core/components/gallery/gallery.component';
 
 const routes: Routes = [
     { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -16,6 +17,7 @@ const routes: Routes = [
     { path: 'cooling', component: CoolingComponent },
     { path: 'contactus', component: ProfileComponent },
     { path: 'home', component: AirConditioningComponent },
+    { path: 'gallery', component: GalleryComponent },
     { path: '*', redirectTo: 'home' }
 ];
 

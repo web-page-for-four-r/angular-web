@@ -11,6 +11,7 @@ import { NouisliderModule } from 'ng2-nouislider';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { JwBootstrapSwitchNg2Module } from 'jw-bootstrap-switch-ng2';
 import { AgmCoreModule } from '@agm/core';
+import { GalleryComponent } from './components/gallery/gallery.component';
 
 
 
@@ -21,6 +22,7 @@ import { AgmCoreModule } from '@agm/core';
     RefregerationComponent,
     AirConditioningComponent,
     ProfileComponent,
+    GalleryComponent,
   ],
 
   imports: [
