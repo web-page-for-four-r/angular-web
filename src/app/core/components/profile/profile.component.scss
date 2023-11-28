@@ -12,3 +12,12 @@ agm-map {
 {
   padding-top: 55px;
 }
+
+
+
+.nav-link {
+  display: flex;
+  gap: 0.5em;
+  cursor: pointer;
+  align-items: baseline;
+}
