@@ -24,19 +24,47 @@
               <h4 class="title">Welcome</h4>
               <!-- <p class="category text-primary">Designer</p> -->
               <p class="description para">
-                We can handle all of your commercial and industrial air conditioning and refrigeration needs 24/7 and
-                will provide air conditioning and refrigeration installation and maintenance in Darwin, Palmerston and
-                rural areas.
+                Four R Service and Maintenance is a renowned company dedicated to providing top-tier maintenance and
+                mechanical solutions. With a commitment to excellence and reliability, Four R stands out for its
+                comprehensive range of services tailored to meet diverse domestic, industrial and commercial needs
               </p>
-              <p class="description para">
-                We are also refrigeration and airconditioning suppliers, working with top brands such as Skope, Orford,
-                Daikin and Fujitsu.
-              </p>
-              <p class="description para">
-                We offer a 24-hour call-out service and have technicians ready to come to you in fully equipped vans to
-                help you with you refrigeration and airconditioning needs. Call us on 08 8947 2277.
-              </p>
-              <button class="btn btn-primary btn-round" type="button" (click)="onClick()">See more</button>
+
+              <div>
+                <button class="btn btn-primary btn-round" type="button" (click)="open(classic2,'' , '')">See
+                  more</button>
+                <ng-template #classic2 let-c="close" let-d="dismiss">
+                  <div class="modal-header justify-content-center">
+                    <button type="button" class="close" (click)="d('Cross click')">
+                      <i class="now-ui-icons ui-1_simple-remove"></i>
+                    </button>
+                    <h4 class="title">What is Four <span style="font-size: 30px;">R</span> Airconditioning,
+                      Refrigeration & Mechanical Service?
+                    </h4>
+                  </div>
+                  <div class="modal-body">
+                    <p style="font-style: italic;">
+                      What sets Four R apart is their customer-centric approach. They prioritize understanding the
+                      unique requirements of each client, ensuring personalized solutions that align with specific
+                      operational goals. Whether it's preventative maintenance programs, equipment repairs, or
+                      full-scale mechanical installations, Four R operates with precision and efficiency.
+                    </p>
+                    <p style="font-style: italic;">
+                      The company's reputation for quality craftsmanship, timely delivery, and attention to detail
+                      precedes them. They prioritize safety protocols and adhere to industry standards, providing
+                      clients with peace of mind and a sense of confidence in the services rendered
+                    </p>
+                    <p style="font-style: italic;">
+                      Four R Service and Maintenance takes pride in fostering long-term relationships with their
+                      clients, built on trust, professionalism, and exceptional service delivery. They are the go-to
+                      choose for businesses seeking reliable, expert-driven maintenance and mechanical solutions.
+                    </p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-link btn-neutral">Back</button>
+                    <button type="button" class="btn btn-danger" (click)="c('Close click')">Close</button>
+                  </div>
+                </ng-template>
+              </div>
               <!-- <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i
                                     class="fab fa-twitter"></i></a>
                             <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i
@@ -55,9 +83,9 @@
                 skilled technician is committed to ensuring your equipment operates at peak performance.
               </p>
               <div>
-                <button class="btn btn-primary btn-round" type="button" (click)="open(classic,'' , '')">See
+                <button class="btn btn-primary btn-round" type="button" (click)="open(classic1,'' , '')">See
                   more</button>
-                <ng-template #classic let-c="close" let-d="dismiss">
+                <ng-template #classic1 let-c="close" let-d="dismiss">
                   <div class="modal-header justify-content-center">
                     <button type="button" class="close" (click)="d('Cross click')">
                       <i class="now-ui-icons ui-1_simple-remove"></i>
