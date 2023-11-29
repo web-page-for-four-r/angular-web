@@ -16,7 +16,7 @@
   <div class="section section-team text-center">
     <div class="container">
       <h2 class="title">Our Services</h2>
-      <div class="team" >
+      <div class="team">
         <div class="row">
           <div class="col-md-4" style="background-color: beige;">
             <div class="team-player">
@@ -46,13 +46,72 @@
           <div class="col-md-4" style="background-color: beige;">
             <div class="team-player">
               <img src="assets/img/test3.jpg" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised" />
-              <h4 class="title">Product & Services</h4>
+              <h4 class="title">Services</h4>
               <!-- <p class="category text-primary">Fashion</p> -->
               <p class="description para">
-                We service air conditioning and refrigeration in Darwin and surrounds and are experts for all your air
-                conditioning and refrigeration needs in Darwin, specialising in:
+                At Four R Services and Maintenance, we are your reliable partner for fixing a wide range of mechanical
+                issues. Specializing in repair services for any appliances (commercial and domestic) such as chiller,
+                air conditioners, cool room, freezers, white goods and various other devices, our dedicated staff of
+                skilled technician is committed to ensuring your equipment operates at peak performance.
               </p>
-              <button class="btn btn-primary btn-round" type="button" (click)="onClick()" >See more</button>
+              <div>
+                <button class="btn btn-primary btn-round" type="button" (click)="open(classic,'' , '')">See
+                  more</button>
+                <ng-template #classic let-c="close" let-d="dismiss">
+                  <div class="modal-header justify-content-center">
+                    <button type="button" class="close" (click)="d('Cross click')">
+                      <i class="now-ui-icons ui-1_simple-remove"></i>
+                    </button>
+                    <h4 class="title">Our Services</h4>
+                  </div>
+                  <div class="modal-body">
+                    <ul>
+                      <li style="font-style: italic;">
+                        <span class="title" style="font-size: 15px;font-style: normal;">
+                          Air Conditioner Repairs:
+                        </span>
+                        Is your air conditioner, chiller plant not cooling efficiently or making unusual noises? Our
+                        expert is well-equipped to diagnose and repair a variety of air conditioning issues, restoring
+                        comfort to your space.
+                      </li>
+                      <li style="font-style: italic;">
+                        <span class="title" style="font-size: 15px;font-style: normal;">
+                          Refrigeration:
+                        </span>
+                        Our technicians are experted in repairing and maintaining cool rooms, freezer rooms and other
+                        refrigerated equipments.
+                      </li>
+                      <li style="font-style: italic;">
+                        <span class="title" style="font-size: 15px;font-style: normal;">
+                          Customer Satisfaction:
+                        </span>
+                        Customer satisfaction is at the core of our business. We take pride in delivering quality
+                        repairs and ensuring that your appliances function optimally after our service.
+                      </li>
+                      <li style="font-style: italic;">
+                        <span class="title" style="font-size: 15px;font-style: normal;">
+                          White goods Repair:
+                        </span>
+                        When your fridge starts acting up, it can disrupt your daily routine. Our technician is
+                        proficient in diagnosing and fixing fridge problems, from temperature issues to faulty
+                        compressors.
+                      </li>
+                      <li style="font-style: italic;">
+                        <span class="title" style="font-size: 15px;font-style: normal;">
+                          Mechanical Problem Solving:
+                        </span>
+                        Beyond air conditioners and fridges, we excel in addressing a broad spectrum of mechanical
+                        problems. Whether it's a malfunctioning appliance or an issue with your machinery, we have the
+                        expertise to identify and resolve the issue promptly.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-link btn-neutral">Back</button>
+                    <button type="button" class="btn btn-danger" (click)="c('Close click')">Close</button>
+                  </div>
+                </ng-template>
+              </div>
               <!-- <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i
                                     class="fab fa-google-plus"></i></a>
                             <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i
@@ -67,12 +126,60 @@
               <h4 class="title">Why FOUR <span style="font-size: 50px;">R</span> Aircon</h4>
               <!-- <p class="category text-primary">Fashion</p> -->
               <p class="description para">
-                You can write here details about one of your team members. You
-                can give more details about what they do. Feel free to add some
-                <a>links</a> for people to be able to follow them
-                outside the site.
+                If you're facing issues with your air conditioner, fridge, or any mechanical equipment, Four R Services
+                and Maintenance is here to offer reliable and effective repair solutions. Contact us today, and let our
+                expert team restore your appliances to full functionality.
               </p>
-              <button class="btn btn-primary btn-round" type="button" (click)="onClick()">See more</button>
+              <div>
+                <button class="btn btn-primary btn-round" type="button" (click)="open(classic,'' , '')">See
+                  more</button>
+                <ng-template #classic let-c="close" let-d="dismiss">
+                  <div class="modal-header justify-content-center">
+                    <button type="button" class="close" (click)="d('Cross click')">
+                      <i class="now-ui-icons ui-1_simple-remove"></i>
+                    </button>
+                    <h4 class="title">Why FOUR <span style="font-size: 50px;">R</span> Aircon</h4>
+                  </div>
+                  <div class="modal-body">
+                    <ul>
+                      <li style="font-style: italic;">
+                        <span class="title" style="font-size: 15px;font-style: normal;">
+                          Expert Technicians:
+                        </span>
+                        Our team comprises highly skilled technicians with extensive experience in the field. They are
+                        adept at troubleshooting and fixing a variety of mechanical problems.
+                      </li>
+                      <li style="font-style: italic;">
+                        <span class="title" style="font-size: 15px;font-style: normal;">
+                          Prompt and Efficient Service:
+                        </span>
+                        We understand the importance of quick solutions. Our responsive
+                        team is committed to providing timely and efficient services to minimize downtime.
+                      </li>
+                      <li style="font-style: italic;">
+                        <span class="title" style="font-size: 15px;font-style: normal;">
+                          Customer Satisfaction:
+                        </span>
+                        Customer satisfaction is at the core of our business. We take pride in delivering quality
+                        repairs and ensuring that your appliances function optimally after our service.
+                      </li>
+                      <li style="font-style: italic;">
+                        <span class="title" style="font-size: 15px;font-style: normal;">
+                          Transparent Communication:
+                        </span>
+                        We believe in transparent communication. Before proceeding with any repairs, our technicians
+                        will thoroughly explain the issue, the proposed solution, and provide an estimate, ensuring you
+                        are informed every step of the way..
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-link btn-neutral">Back</button>
+                    <button type="button" class="btn btn-danger" (click)="c('Close click')">Close</button>
+                  </div>
+                </ng-template>
+              </div>
+
               <!-- <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i
                                     class="fab fa-google-plus"></i></a>
                             <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i
