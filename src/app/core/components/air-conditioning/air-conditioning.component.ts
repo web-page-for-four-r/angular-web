@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { GeneralService } from 'app/core/services/general.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-air-conditioning',
@@ -13,7 +14,7 @@ export class AirConditioningComponent implements OnInit {
   focus;
   focus1;
 
-  constructor(private generalService: GeneralService) { }
+  constructor(private generalService: GeneralService, private router: Router) { }
 
   ngOnInit() {
     var body = document.getElementsByTagName('body')[0];
@@ -27,6 +28,10 @@ export class AirConditioningComponent implements OnInit {
     body.classList.remove('landing-page');
     var navbar = document.getElementsByTagName('nav')[0];
     navbar.classList.remove('navbar-transparent');
+  }
+
+  onClick(){
+    this.router.navigate(['/air-conditioning']);
   }
 
 }
