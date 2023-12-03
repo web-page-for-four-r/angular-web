@@ -4,12 +4,10 @@ agm-map {
 
 
 .move {
-  // position: absolute;
   padding-top: 30px;
 }
 
-.move2
-{
+.move2 {
   padding-top: 55px;
 }
 
@@ -20,4 +18,36 @@ agm-map {
   gap: 0.5em;
   cursor: pointer;
   align-items: baseline;
+}
+
+.button-container {
+  padding: 2em 0;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+
+.fb {
+  background-color: #24418d;
+}
+
+.insta {
+  background-color: #953B99;
+}
+
+.label {
+  margin: 0;
+}
+
+.contact-desc {
+  padding: 2em;
+}
+
+.address {
+  text-align: left !important;
+}
+
+.para {
+  font-weight: 400;
+  padding: 0.5em 0;
 }

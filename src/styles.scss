@@ -1,2 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/scss/bootstrap.scss";
+
+
+html,body {
+    font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif !important;
+}
+
+.para{
+    text-align: justify;
+    color: #000 !important;
+    font-size: 1.14em;
+    font-weight: 300;
+  }

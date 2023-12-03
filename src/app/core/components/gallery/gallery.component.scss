@@ -1,26 +1,66 @@
 agm-map {
-    height: 300px;
-  }
-  
-  
-  .move {
-    // position: absolute;
-    padding-top: 30px;
-  }
-  
-  .move2
-  {
-    padding-top: 55px;
-  }
-
-  .corousalDive{
-    padding-bottom: 20px;
-  }
+  height: 300px;
+}
 
 
-  .zoom:hover {
-    -ms-transform: scale(1.1); /* IE 9 */
-    -webkit-transform: scale(1.1); /* Safari 3-8 */
-    transform: scale(1.1); 
-  }
-  
+.move {
+  // position: absolute;
+  padding-top: 30px;
+}
+
+.move2 {
+  padding-top: 55px;
+}
+
+.corousalDive {
+  padding-bottom: 20px;
+}
+
+
+.zoom:hover {
+  -ms-transform: scale(1.1);
+  /* IE 9 */
+  -webkit-transform: scale(1.1);
+  /* Safari 3-8 */
+  transform: scale(1.1);
+}
+
+.button-container {
+  padding: 2em 0;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+
+.fb {
+  background-color: #24418d;
+}
+
+.insta {
+  background-color: #953B99;
+}
+
+.label {
+  margin: 0;
+}
+
+.contact-desc {
+  padding: 2em;
+}
+
+.address {
+  text-align: left !important;
+}
+
+.para {
+  text-align: center;
+  padding-bottom: 2em;
+}
+
+.nav-pills {
+  padding: 0;
+}
+
+.design {
+  padding: 0;
+}

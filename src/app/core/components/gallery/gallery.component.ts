@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import * as Rellax from 'rellax';
+import { GeneralService } from 'app/core/services/general.service';
 
 @Component({
   selector: 'app-gallery',
@@ -16,11 +16,10 @@ export class GalleryComponent implements OnInit {
   focus;
   focus1;
 
-  constructor() { }
+  constructor(private generalService: GeneralService) { }
 
   ngOnInit() {
-    var rellaxHeader = new Rellax('.rellax-header');
-
+    this.generalService.setBrowserTitle('4RAircon | Gallery');
     var body = document.getElementsByTagName('body')[0];
     body.classList.add('profile-page');
     var navbar = document.getElementsByTagName('nav')[0];

@@ -1,259 +1,101 @@
 <div class="wrapper">
-  <app-nav-header></app-nav-header>
-  <div class="section section-about-us">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8 ml-auto mr-auto text-center images">
-          <img src="assets/img/logo10.jpeg" alt="Rounded Image" class="rounded" />
-          <h2 class="title">FOUR R</h2>
-          <h4>Air Conditioning,Refrigeration and Mechanical Services</h4>
-          <!-- <p class="description"></p> -->
-        </div>
-      </div>
-      <!-- <div class="separator separator-primary"></div> -->
-    </div>
-  </div>
-  <div class="section section-team text-center">
-    <div class="container">
-      <h2 class="title">Our Services</h2>
-      <div class="team">
-        <div class="row">
-          <div class="col-md-4" style="background-color: beige;">
-            <div class="team-player">
-              <img src="assets/img/test1.jpg" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised" />
-              <h4 class="title">Welcome</h4>
-              <!-- <p class="category text-primary">Designer</p> -->
-              <p class="description para">
-                Four R Service and Maintenance is a renowned company dedicated to providing top-tier maintenance and
-                mechanical solutions. With a commitment to excellence and reliability, Four R stands out for its
-                comprehensive range of services tailored to meet diverse domestic, industrial and commercial needs
-              </p>
+    <app-nav-header></app-nav-header>
 
-              <div>
-                <button class="btn btn-primary btn-round" type="button" (click)="open(classic2,'' , '')">See
-                  more</button>
-                <ng-template #classic2 let-c="close" let-d="dismiss">
-                  <div class="modal-header justify-content-center">
-                    <button type="button" class="close" (click)="d('Cross click')">
-                      <i class="now-ui-icons ui-1_simple-remove"></i>
-                    </button>
-                    <h4 class="title">What is Four <span style="font-size: 30px;">R</span> Airconditioning,
-                      Refrigeration & Mechanical Service?
-                    </h4>
-                  </div>
-                  <div class="modal-body">
-                    <p style="font-style: italic;">
-                      What sets Four R apart is their customer-centric approach. They prioritize understanding the
-                      unique requirements of each client, ensuring personalized solutions that align with specific
-                      operational goals. Whether it's preventative maintenance programs, equipment repairs, or
-                      full-scale mechanical installations, Four R operates with precision and efficiency.
-                    </p>
-                    <p style="font-style: italic;">
-                      The company's reputation for quality craftsmanship, timely delivery, and attention to detail
-                      precedes them. They prioritize safety protocols and adhere to industry standards, providing
-                      clients with peace of mind and a sense of confidence in the services rendered
-                    </p>
-                    <p style="font-style: italic;">
-                      Four R Service and Maintenance takes pride in fostering long-term relationships with their
-                      clients, built on trust, professionalism, and exceptional service delivery. They are the go-to
-                      choose for businesses seeking reliable, expert-driven maintenance and mechanical solutions.
-                    </p>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-link btn-neutral">Back</button>
-                    <button type="button" class="btn btn-danger" (click)="c('Close click')">Close</button>
-                  </div>
-                </ng-template>
-              </div>
-              <!-- <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i
-                                    class="fab fa-twitter"></i></a>
-                            <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i
-                                    class="fab fa-linkedin"></i></a> -->
-            </div>
-          </div>
-          <div class="col-md-4" style="background-color: beige;">
-            <div class="team-player">
-              <img src="assets/img/test3.jpg" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised" />
-              <h4 class="title">Services</h4>
-              <!-- <p class="category text-primary">Fashion</p> -->
-              <p class="description para">
-                At Four R Services and Maintenance, we are your reliable partner for fixing a wide range of mechanical
-                issues. Specializing in repair services for any appliances (commercial and domestic) such as chiller,
-                air conditioners, cool room, freezers, white goods and various other devices, our dedicated staff of
-                skilled technician is committed to ensuring your equipment operates at peak performance.
-              </p>
-              <div>
-                <button class="btn btn-primary btn-round" type="button" (click)="open(classic1,'' , '')">See
-                  more</button>
-                <ng-template #classic1 let-c="close" let-d="dismiss">
-                  <div class="modal-header justify-content-center">
-                    <button type="button" class="close" (click)="d('Cross click')">
-                      <i class="now-ui-icons ui-1_simple-remove"></i>
-                    </button>
-                    <h4 class="title">Our Services</h4>
-                  </div>
-                  <div class="modal-body">
-                    <ul>
-                      <li style="font-style: italic;">
-                        <span class="title" style="font-size: 15px;font-style: normal;">
-                          Air Conditioner Repairs:
-                        </span>
-                        Is your air conditioner, chiller plant not cooling efficiently or making unusual noises? Our
-                        expert is well-equipped to diagnose and repair a variety of air conditioning issues, restoring
-                        comfort to your space.
-                      </li>
-                      <li style="font-style: italic;">
-                        <span class="title" style="font-size: 15px;font-style: normal;">
-                          Refrigeration:
-                        </span>
-                        Our technicians are experted in repairing and maintaining cool rooms, freezer rooms and other
-                        refrigerated equipments.
-                      </li>
-                      <li style="font-style: italic;">
-                        <span class="title" style="font-size: 15px;font-style: normal;">
-                          Customer Satisfaction:
-                        </span>
-                        Customer satisfaction is at the core of our business. We take pride in delivering quality
-                        repairs and ensuring that your appliances function optimally after our service.
-                      </li>
-                      <li style="font-style: italic;">
-                        <span class="title" style="font-size: 15px;font-style: normal;">
-                          White goods Repair:
-                        </span>
-                        When your fridge starts acting up, it can disrupt your daily routine. Our technician is
-                        proficient in diagnosing and fixing fridge problems, from temperature issues to faulty
-                        compressors.
-                      </li>
-                      <li style="font-style: italic;">
-                        <span class="title" style="font-size: 15px;font-style: normal;">
-                          Mechanical Problem Solving:
-                        </span>
-                        Beyond air conditioners and fridges, we excel in addressing a broad spectrum of mechanical
-                        problems. Whether it's a malfunctioning appliance or an issue with your machinery, we have the
-                        expertise to identify and resolve the issue promptly.
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-link btn-neutral">Back</button>
-                    <button type="button" class="btn btn-danger" (click)="c('Close click')">Close</button>
-                  </div>
-                </ng-template>
-              </div>
-              <!-- <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i
-                                    class="fab fa-google-plus"></i></a>
-                            <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i
-                                    class="fab fa-youtube"></i></a>
-                            <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i
-                                    class="fab fa-twitter"></i></a> -->
-            </div>
-          </div>
-          <div class="col-md-4" style="background-color: beige;">
-            <div class="team-player">
-              <img src="assets/img/test3.jpg" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised" />
-              <h4 class="title">Why FOUR <span style="font-size: 50px;">R</span> Aircon</h4>
-              <!-- <p class="category text-primary">Fashion</p> -->
-              <p class="description para">
-                If you're facing issues with your air conditioner, fridge, or any mechanical equipment, Four R Services
-                and Maintenance is here to offer reliable and effective repair solutions. Contact us today, and let our
-                expert team restore your appliances to full functionality.
-              </p>
-              <div>
-                <button class="btn btn-primary btn-round" type="button" (click)="open(classic,'' , '')">See
-                  more</button>
-                <ng-template #classic let-c="close" let-d="dismiss">
-                  <div class="modal-header justify-content-center">
-                    <button type="button" class="close" (click)="d('Cross click')">
-                      <i class="now-ui-icons ui-1_simple-remove"></i>
-                    </button>
-                    <h4 class="title">Why FOUR <span style="font-size: 50px;">R</span> Aircon</h4>
-                  </div>
-                  <div class="modal-body">
-                    <ul>
-                      <li style="font-style: italic;">
-                        <span class="title" style="font-size: 15px;font-style: normal;">
-                          Expert Technicians:
-                        </span>
-                        Our team comprises highly skilled technicians with extensive experience in the field. They are
-                        adept at troubleshooting and fixing a variety of mechanical problems.
-                      </li>
-                      <li style="font-style: italic;">
-                        <span class="title" style="font-size: 15px;font-style: normal;">
-                          Prompt and Efficient Service:
-                        </span>
-                        We understand the importance of quick solutions. Our responsive
-                        team is committed to providing timely and efficient services to minimize downtime.
-                      </li>
-                      <li style="font-style: italic;">
-                        <span class="title" style="font-size: 15px;font-style: normal;">
-                          Customer Satisfaction:
-                        </span>
-                        Customer satisfaction is at the core of our business. We take pride in delivering quality
-                        repairs and ensuring that your appliances function optimally after our service.
-                      </li>
-                      <li style="font-style: italic;">
-                        <span class="title" style="font-size: 15px;font-style: normal;">
-                          Transparent Communication:
-                        </span>
-                        We believe in transparent communication. Before proceeding with any repairs, our technicians
-                        will thoroughly explain the issue, the proposed solution, and provide an estimate, ensuring you
-                        are informed every step of the way..
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-link btn-neutral">Back</button>
-                    <button type="button" class="btn btn-danger" (click)="c('Close click')">Close</button>
-                  </div>
-                </ng-template>
-              </div>
-
-              <!-- <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i
-                                    class="fab fa-google-plus"></i></a>
-                            <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i
-                                    class="fab fa-youtube"></i></a>
-                            <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i
-                                    class="fab fa-twitter"></i></a> -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="section section-contact-us text-center">
-    <!-- <div class="container">
-            <h2 class="title">Want to work with us?</h2>
-            <p class="description">Your project is very important to us.</p>
+    <div class="section section-about-us">
+        <div class="container">
             <div class="row">
-                <div class="col-lg-6 text-center col-md-8 ml-auto mr-auto">
-                    <div class="input-group input-lg" [ngClass]="{'input-group-focus':focus===true}">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text">
-                                <i class="now-ui-icons users_circle-08"></i>
-                            </span>
+                <div class="col-md-8 ml-auto mr-auto text-center">
+                    <app-sub-heading heading="Air Conditioning"></app-sub-heading>
+                    <!-- <p class="description"></p> -->
+                </div>
+            </div>
+            <!-- <div class="separator separator-primary"></div> -->
+            <div class="section-story-overview">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="image-container image-left" style="background-image: url('assets/img/test2.jpg')">
+                            <!-- First image on the left side -->
+                            <p class="blockquote blockquote-primary">“God has been replaced, as he has all over the
+                                West, with respectability and air conditioning.”
+                                <br>
+                                <br>
+                                <small>— Amiri Baraka</small>
+                            </p>
                         </div>
-                        <input type="text" class="form-control" placeholder="Left Font Awesome Icon"
-                            (focus)="focus=true" (blur)="focus=false">
+                        <!-- Second image on the left side of the article -->
+                        <div class="image-container" style="background-image: url('assets/img/test3.jpg')"></div>
                     </div>
-                    <div class="input-group input-lg" [ngClass]="{'input-group-focus':focus1===true}">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text">
-                                <i class="now-ui-icons ui-1_email-85"></i>
-                            </span>
+                    <div class="col-md-5 para">
+                        <!-- First image on the right side, above the article -->
+                        <div class="image-container image-right" style="background-image: url('assets/img/test4.jpg')">
                         </div>
-                        <input type="text" class="form-control" placeholder="Left Font Awesome Icon"
-                            (focus)="focus1=true" (blur)="focus1=false">
-                    </div>
-                    <div class="textarea-container">
-                        <textarea class="form-control" name="name" rows="4" cols="80"
-                            placeholder="Type a message..."></textarea>
-                    </div>
-                    <div class="send-button">
-                        <a href="#pablo" class="btn btn-primary btn-round btn-block btn-lg">Send Message</a>
+                        <!-- <h3>So what does the new record for the lowest level of winter ice actually mean</h3> -->
+                        <p>Air Conditioning Services consist of any service performed on the equipment that delivers
+                            cool
+                            air to the cabin of your car. The major components of your air conditioning system include
+                            the
+                            compressor, condenser, evaporator, expansion valve, and refrigerant. There are a variety of
+                            problems that can hinder your air conditioner’s ability to generate cold air—it may be as
+                            simple
+                            as needing to add refrigerant. However, normal wear and tear causes seals, hoses, and
+                            fittings
+                            to get loose and wear out. When this happens, refrigerant can leak out.
+                        </p>
+                        <p>
+                            Your air conditioner has an important job: keeping you and your family comfortable indoors.
+                            When an air conditioner breaks down, it can be as expensive as it is frustrating. At One
+                            Hour Heating & Air Conditioning, our team takes the frustration out of air conditioning
+                            repair, installation, and maintenance.
+                        </p>
                     </div>
                 </div>
             </div>
-        </div> -->
-  </div>
-  <app-footer></app-footer>
+        </div>
+    </div>
+    <!-- <div class="section section-team text-center">
+        <div class="container">
+            <h2 class="title">Our Services</h2>
+            <div class="team">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="team-player">
+                            <img src="assets/img/avatar.jpg" alt="Thumbnail Image"
+                                class="rounded-circle img-fluid img-raised">
+                            <h4 class="title">Romina Hadid</h4>
+                            <p class="category text-primary">Model</p>
+                            <p class="description">You can write here details about one of your team members. You can
+                                give more details about what they do. Feel free to add some
+                                <a href="#">links</a> for people to be able to follow them outside the site.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="team-player">
+                            <img src="assets/img/ryan.jpg" alt="Thumbnail Image"
+                                class="rounded-circle img-fluid img-raised">
+                            <h4 class="title">Ryan Tompson</h4>
+                            <p class="category text-primary">Designer</p>
+                            <p class="description">You can write here details about one of your team members. You can
+                                give more details about what they do. Feel free to add some
+                                <a href="#">links</a> for people to be able to follow them outside the site.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="team-player">
+                            <img src="assets/img/eva.jpg" alt="Thumbnail Image"
+                                class="rounded-circle img-fluid img-raised">
+                            <h4 class="title">Eva Jenner</h4>
+                            <p class="category text-primary">Fashion</p>
+                            <p class="description">You can write here details about one of your team members. You can
+                                give more details about what they do. Feel free to add some
+                                <a href="#">links</a> for people to be able to follow them outside the site.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+   <app-footer></app-footer>
 </div>
