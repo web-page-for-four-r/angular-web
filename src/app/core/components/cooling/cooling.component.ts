@@ -10,8 +10,6 @@ import * as Rellax from 'rellax';
 export class CoolingComponent implements OnInit {
 
   data : Date = new Date();
-  focus;
-  focus1;
 
   constructor(private generalService: GeneralService) { }
 
