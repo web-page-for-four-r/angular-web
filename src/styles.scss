@@ -24,3 +24,10 @@ html,body {
       display: block !important;
     }
   }
+
+
+  @media screen and (max-width: 500px) {
+    h1 {
+      font-size: 1.5em !important;
+    }
+  }
