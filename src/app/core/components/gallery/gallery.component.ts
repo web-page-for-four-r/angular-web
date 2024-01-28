@@ -19,7 +19,7 @@ export class GalleryComponent implements OnInit {
   constructor(private generalService: GeneralService) { }
 
   ngOnInit() {
-    this.generalService.setBrowserTitle('4RAircon | Gallery');
+    this.generalService.setBrowserTitle('FOUR R Aircon | Gallery');
     var body = document.getElementsByTagName('body')[0];
     body.classList.add('profile-page');
     var navbar = document.getElementsByTagName('nav')[0];

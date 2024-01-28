@@ -14,7 +14,7 @@ const routes: Routes = [
     { path: '', redirectTo: 'home', pathMatch: 'full' },
     { path: 'air-conditioning', component: AirConditioningComponent },
     { path: 'refrigeration', component: RefregerationComponent },
-    { path: 'cooling', component: CoolingComponent },
+    // { path: 'cooling', component: CoolingComponent },
     { path: 'contactus', component: ProfileComponent },
     { path: 'home', component: HomeComponent },
     { path: 'gallery', component: GalleryComponent },
@@ -25,7 +25,7 @@ const routes: Routes = [
     imports: [
         CommonModule,
         BrowserModule,
-        RouterModule.forRoot(routes, { scrollPositionRestoration: 'top' })
+        RouterModule.forRoot(routes, { scrollPositionRestoration: 'top', useHash: true })
     ],
     exports: [
     ],

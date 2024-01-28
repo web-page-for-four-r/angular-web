@@ -19,7 +19,7 @@ export class AirConditioningComponent implements OnInit {
     body.classList.add('landing-page');
     var navbar = document.getElementsByTagName('nav')[0];
     navbar.classList.add('navbar-transparent');
-    this.generalService.setBrowserTitle('4RAircon | Air Conditioning');
+    this.generalService.setBrowserTitle('FOUR R Aircon | Air Conditioning');
   }
   ngOnDestroy(){
     var body = document.getElementsByTagName('body')[0];

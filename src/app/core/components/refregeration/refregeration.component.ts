@@ -20,7 +20,7 @@ export class RefregerationComponent implements OnInit {
     body.classList.add('landing-page');
     var navbar = document.getElementsByTagName('nav')[0];
     navbar.classList.add('navbar-transparent');
-    this.generalService.setBrowserTitle('4RAircon | Refrigeration');
+    this.generalService.setBrowserTitle('FOUR R Aircon | Refrigeration');
   }
   ngOnDestroy(){
     var body = document.getElementsByTagName('body')[0];

@@ -19,7 +19,7 @@ export class ProfileComponent implements OnInit {
   constructor(private generalService: GeneralService) { }
 
   ngOnInit() {
-    this.generalService.setBrowserTitle('4RAircon | Contact Us');
+    this.generalService.setBrowserTitle('FOUR R Aircon | Contact Us');
     var body = document.getElementsByTagName('body')[0];
     body.classList.add('profile-page');
     var navbar = document.getElementsByTagName('nav')[0];
